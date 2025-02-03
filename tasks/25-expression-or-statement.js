@@ -6,23 +6,33 @@
  *  - выражение-инструкция (expression statement)
  */
 
+
+// выражение-инструкция
 15
 
-const myObject = {
+// инструкция
+const myObject = { // выражение
   x: 10,
   y: true,
 }
 
-myObject.z = 'abc'
+// выражение-инструкция
+myObject.z = 'abc' // выражение
 
+// выражение-инструкция
 delete myObject.x
 
+// инструкция
 let newVariable
 
-newVariable = 30 + 5
+// выражение-инструкция
+newVariable = 30 + 5 // выражение
 
-console.log(newVariable)
+// выражение-инструкция
+console.log(newVariable) // (newVariable) - выражение
 
-if (newVariable > 10) {
-  console.log(`${newVariable} больше 10`)
-}
+// инструкция
+if (newVariable > 10) { // (newVariable > 10) - выражение
+  // выражение-инструкция
+  console.log(`${newVariable} больше 10`) // (`${newVariable} больше 10`) - выражение
+}                                         // (newVariable) - выражение
