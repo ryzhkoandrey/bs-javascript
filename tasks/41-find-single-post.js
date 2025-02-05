@@ -13,11 +13,16 @@
  */
 
 const posts = [
-  { postId: 1355, commentsQuantity: 5 },
-  { postId: 5131, commentsQuantity: 13 },
-  { postId: 6134, commentsQuantity: 2 },
+    { postId: 1355, commentsQuantity: 5 },
+    { postId: 5131, commentsQuantity: 13 },
+    { postId: 6134, commentsQuantity: 2 },
 ]
 
-console.log(findPostById(6134, posts)) // { postId: 6134, commentsQuantity: 2 }
+const findPostById = (postId, array) => {
+    const foundPost = array.find(post => post.postId === postId);
+    if (foundPost) console.log(foundPost.postId);
+    return foundPost;
+}
 
+console.log(findPostById(6134, posts)) // { postId: 6134, commentsQuantity: 2 }
 console.log(findPostById(4511, posts)) // undefined
