@@ -10,6 +10,9 @@ const vowels = ['a', 'e', 'i', 'o', 'u']
 const str = 'Today is the best day of my life'
 
 // Напишите код здесь
+for (let char of str) {
+   if (vowels.includes(char.toLowerCase())) vowelsCount++;
+}
 
 console.log(vowelsCount)
 // 9
