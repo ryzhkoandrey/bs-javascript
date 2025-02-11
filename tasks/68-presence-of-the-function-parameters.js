@@ -5,8 +5,14 @@
  * "Функция "square" не может быть вызвана без аргумента"
  */
 
+// function square(a) {
+//   if (typeof a === 'number') return console.log(a * a);
+//   throw new Error('Функция "square" не может быть вызвана без аргумента');
+// }
+
 function square(a) {
-  console.log(a * a)
+   if (a === undefined) throw new Error('Функция "square" не может быть вызвана без аргумента');
+   console.log(a * a);
 }
 
 square(10)
