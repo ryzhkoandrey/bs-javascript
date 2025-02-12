@@ -13,6 +13,22 @@
 const nums = [10, -12, 30, -1, -8, 0, 14, -33, 20]
 
 // Создайте функцию "sumPositiveNegative" здесь
+const sumPositiveNegative = (nums) => {
+   return nums.reduce((sum, num) => {
+      if (num > 0) {
+         return {
+            ...sum,
+            positive: sum.positive + num,
+         }
+      }
+
+      return {
+         ...sum,
+         negative: sum.negative + num,
+      }
+   }, { positive: 0, negative: 0, }
+   );
+}
 
 const result = sumPositiveNegative(nums)
 
